@@ -25,16 +25,16 @@ for i in range(len(x)):
  
 #zeroes
 #s=math.sqrt(b**2-4*a*c)
-#x1=(-1*b+s)/(2*a)
-#x2=(-1*b-s)/(2*a)
+#x_1=(-1*b+s)/(2*a)
+#x_2=(-1*b-s)/(2*a)
 roots=p.r
  
 A=np.array([roots[0],0])
 B=np.array([roots[1],0])
 plt.plot(A[0], A[1], 'o')
-plt.text(A[0] * (1 + 0.1), A[1] * (1 - 0.1) , 'x1')
+plt.text(A[0] * (1 + 0.1), A[1] * (1 - 0.1) , '$x_1$')
 plt.plot(B[0], B[1], 'o')
-plt.text(B[0] * (1-0.5), B[1] * (1-0.1) , 'x2')
+plt.text(B[0] * (1-0.5), B[1] * (1-0.1) , '$x_2$')
 plt.plot(x,y,label='$p(x)=6x^2+17x+5$')
 plt.xlabel('$x$')
 plt.ylabel('$p(x)$')
